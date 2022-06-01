@@ -1,0 +1,539 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap";
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  padding: 5% 25%;
+}
+
+section {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 1% 1% 1% 4%;
+}
+
+.text-box {
+  background-color: #dcdcdc;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #000;
+  background: #fff;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+header {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 1%;
+  font-size: 1.953rem;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  text-align: center;
+  font-size: .75rem;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2%;
+  display: flex;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav .active {
+  font-weight: bold;
+}
+
+.nav-links {
+  width: 50%;
+  justify-content: space-around;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    width: 60%;
+    font-size: smaller;
+  }
+}
+
+.tasklistheader {
+  background-image: url("girlstudy.6de88b06.jpg");
+}
+
+#task-grid {
+  grid-template: "taskform tasklist" 1fr
+  / 1fr 1fr;
+  display: grid;
+}
+
+#taskform {
+  max-width: 300px;
+  grid-area: taskform;
+  margin: 0 auto;
+}
+
+#taskform label {
+  width: 100%;
+  display: block;
+}
+
+#taskform input {
+  width: 100px;
+}
+
+#tasklist {
+  grid-area: tasklist;
+}
+
+#page1 {
+  padding-bottom: 5%;
+}
+
+#draganddrop {
+  background-color: #98d6f0;
+  padding: 5%;
+}
+
+.example-parent {
+  float: center;
+  display: flex;
+}
+
+.box-1 {
+  text-align: center;
+  text-size-adjust: 12px;
+  height: 105%;
+  width: 70%;
+  border: 1px solid #000;
+  margin: 2%;
+  padding: 1% 2% 5%;
+}
+
+.text-box-blue {
+  background-color: #98d6f0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+@media screen and (max-width: 768px) {
+  #taskform, #taskList {
+    font-size: smaller;
+  }
+}
+
+button {
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  background-color: #dcdcdc;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+button:hover {
+  box-shadow: inset 200px 0 #98d6f0;
+}
+
+.buttonGG {
+  color: #fff;
+  width: 125px;
+  cursor: pointer;
+  background-color: #dcdcdc;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+.buttonGG:hover {
+  box-shadow: inset 200px 0 #63b891;
+}
+
+#searchbutton {
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  background-color: #dcdcdc;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+#searchbutton:hover {
+  box-shadow: inset 200px 0 #cdb3ce;
+}
+
+.button-1 {
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  background-color: #63b891;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  margin-top: 3%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+.button-1:hover {
+  box-shadow: inset 200px 0 #dcdcdc;
+}
+
+.button-2 {
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  background-color: #ffc533;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  margin-top: 3%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+.button-2:hover {
+  box-shadow: inset 200px 0 #dcdcdc;
+}
+
+.button-3 {
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  background-color: #cdb3ce;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  margin-top: 3%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+.button-3:hover {
+  box-shadow: inset 200px 0 #dcdcdc;
+}
+
+.button-4 {
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  background-color: #98d6f0;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  margin-top: 3%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+.button-4:hover {
+  box-shadow: inset 200px 0 #dcdcdc;
+}
+
+.action-btn {
+  color: #fff;
+  width: 50px;
+  cursor: pointer;
+  background-color: #ffc533;
+  border: 1px solid;
+  border-radius: 6px;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+.action-btn:hover {
+  box-shadow: inset 200px 0 #dcdcdc;
+}
+
+.homepageheader {
+  background-image: url("student-laptop-books.1fe58c59.jpg");
+}
+
+#textinfo {
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+#pages h3 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.box {
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  display: flex;
+}
+
+.single {
+  text-align: center;
+  color: #000;
+  border-radius: 6px;
+  flex-basis: 22%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.single img {
+  width: 30%;
+  border-radius: 6px;
+}
+
+#greydiv {
+  background-color: #dcdcdc;
+  padding: .4%;
+}
+
+.dictionaryheader {
+  background-image: url("dictionary.bf6bba41.jpg");
+}
+
+.search-box {
+  text-align: center;
+  height: 7%;
+  padding-bottom: 2%;
+}
+
+input {
+  width: 30%;
+  border: .3px solid #585858;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: .5%;
+}
+
+::placeholder {
+  color: #cecece;
+  font-style: italic;
+}
+
+.content {
+  text-align: center;
+  background-color: #cdb3ce;
+  border-radius: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 28%;
+}
+
+.word {
+  width: 60%;
+  text-align: center;
+  background-color: #dcdcdc;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 10%;
+}
+
+.details, .word-meaning, .word-example {
+  width: 60%;
+  text-align: center;
+  background-color: #dcdcdc;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+#emptyList {
+  text-align: center;
+}
+
+.text-box-purple {
+  background-color: #cdb3ce;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+#purplediv {
+  background-color: #cdb3ce;
+  padding: .4%;
+}
+
+#whitediv {
+  background-color: #fff;
+  padding: .5%;
+}
+
+.timerheader {
+  background-image: url("timer1.bb2255f7.jpg");
+}
+
+.text-box-green {
+  background-color: #63b891;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+#time {
+  padding-bottom: 2%;
+  font-size: 300%;
+}
+
+#buttons {
+  text-align: center;
+  padding: 2%;
+}
+
+#greendiv {
+  background-color: #63b891;
+  padding: .4%;
+}
+
+@media screen and (max-width: 768px) {
+  #time {
+    font-size: xx-large;
+  }
+}
+
+.musicplayerheader {
+  background-image: url("musicplayer1.d19cc87f.jpg");
+}
+
+.listofsongs {
+  width: 60%;
+  text-align: center;
+  background-color: #dcdcdc;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-left: 20%;
+  padding: 2%;
+}
+
+.text-box-yellow {
+  background-color: #ffc533;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.title {
+  text-align: center;
+}
+
+#yellowdiv {
+  background-color: #ffc533;
+  padding: .4%;
+}
+
+#whitediv {
+  background-color: #fff;
+  padding: .5%;
+}
+
+.musicbuttons {
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.c74267d1.css.map */
