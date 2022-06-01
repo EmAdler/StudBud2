@@ -1,0 +1,30 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2%;
+  
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: black;
+}
+nav .active{
+font-weight: bold;
+}
+
+.nav-links{
+  display:flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+
+@media screen and (max-width:768px){
+  .nav-links{
+    font-size: smaller;
+    width:60%;
+}
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>StudBud</title>
+    <link href="scss/main.scss" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+
+<body class="app-container">
+
+  <nav>
+    <div class = "logo">
+    <a href="index.html"><img src="images/logo.png" alt="logo" width = "120px"></a>
+  </div>
+  
+    <ul class = "nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tasklist.html" >Tasks</a></li>
+      <li><a href="dictionary.html">Dictionary</a></li>
+      <li><a href="musicplayer.html">Music Player</a></li>
+      <li><a href="timer.html" class="active">Timer</a></li>
+    </ul>
+   
+  </div>
+  
+  </nav>
+
+    <header class = "timerheader">
+        <div class = "text-box-green">
+            <h2>Timer</h2>
+                <p>Set your timer to your allocated work time to ensure productivity</p>
+                  <!-- FIGURE OUT HOW TO ADD A STOP WATCH -->
+                  <div id="pomodoro-app">
+                    <div id="container">
+                      <div id="timer">
+                        <div id="time">
+                          <span id="minutes">00</span>
+                          <span id="colon">:</span>
+                          <span id="seconds">00</span>
+                          <span id="textmin">mins</span>
+                        </div>
+                        <div id="filler"></div>
+                      </div>
+                    </div>
+                  </div>
+        </header>
+        
+    <div id = "greendiv"></div>
+
+   
+
+    <section >
+        <h3>Ready to Go Timers</h3>
+       
+         <!-- FIGURE OUT HOW TO LINK BUTTONS TO MAKE THE TIMER WORK -->
+         <div id="buttons">
+          <h5>Click the pomodoro timer that you would like?</h5>
+          <button class = "buttonGG" id="work">30 min Work</button>
+           <button class = "buttonGG" id="extendedWork">1 hour Work</button>
+          <button  class = "buttonGG" id="shortBreak">5 min Break</button>
+          <button class = "buttonGG" id="longBreak">15 min break</button>
+          <button class = "buttonGG" id="stop">Reset</button>
+        </div>
+    </section>
+
+   
+      <div id = "greendiv"></div>
+
+
+  <footer>
+    <p>Copyright © 2022 STUDbud</p>
+  </footer>
+  
+  <script src="timer.js"  >
+  </script>
+</body>
+
+</html>

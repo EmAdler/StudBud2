@@ -1,0 +1,39 @@
+
+.timerheader{
+    background-image: url(../images/timer1.jpg);
+   
+  }
+  
+
+.text-box-green{
+    background-color: #63B891;
+    border-radius:10px ;
+    border: solid 2px white;
+    padding: 4%;
+  }
+
+#time{
+    font-size: 300%;
+    padding-bottom: 2%;
+}
+
+#buttons{
+    padding:2%;
+    text-align: center;
+}
+
+
+
+#greendiv{
+    padding:.4%;
+    background-color: #63B891;
+}
+
+
+
+
+@media screen and (max-width:768px){
+ #time{
+   font-size:xx-large;
+ }
+}

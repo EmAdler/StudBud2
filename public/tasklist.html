@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>StudBud</title>
+    <link href="scss/main.scss" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
+
+  <body class="app-container">
+    <nav>
+      <div class = "logo">
+      <a href="index.html"><img src="images/logo.png" alt="logo" width = "120px"></a>
+    </div>
+    
+      <ul class = "nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tasklist.html" class="active">Tasks</a></li>
+        <li><a href="dictionary.html">Dictionary</a></li>
+        <li><a href="musicplayer.html">Music Player</a></li>
+        <li><a href="timer.html">Timer</a></li>
+      </ul>
+     
+    </div>
+    
+    </nav>
+
+    <header class = "tasklistheader">
+      <div class="text-box-blue">
+        <h2>Task List</h2>
+        <p>Get everything done with out forgetting anything</p>
+      </div>
+    </header>
+
+    <section id="page1" class="page-container">
+      <h3>Add your tasks:</h3>
+      <div id="task-grid">
+        <form id="taskform">
+          <!-- task input -->
+          <label for="task">Task:</label>
+          <input type="text" name="task" id="taskInput" required />
+          <br />
+          <!-- Date input -->
+          <label for="dueDate">Due Date: </label>
+          <input type="date" name="dueDate" id="dueDateInput" />
+          <br />
+          <!-- Time input -->
+          <label for="completionTime">Completion Time: </label>
+          <input type="time" name="completionTime" id="completionTimeInput" />
+          <br />
+          <!-- Estimated time input -->
+          <label for="estimatedTime"
+            >Estimated completion time (in mins):</label
+          >
+          <input type="number" name="estimatedTime" id="estimatedTimeInput" />
+          <br />
+          <!-- Priority input -->
+          <label for="priority">Task Priority:</label>
+          <select name="prority" id="priorityInput">
+            <option value="">Select one</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+
+          <br />
+
+          <button type="submit">Submit</button>
+        </form>
+        <div id="tasklist">
+          <p id="emptyList">You have not added any tasks yet.</p>
+          <ul></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="draganddrop">
+      <h3>Grouping your tasks</h3>
+      <h6>Hint* Click the title to change the name...</h6>
+      
+      <div class="example-parent">
+        <div
+        id = "box-1"
+          class="box-1"
+          ondragover="onDragOver(event);"
+          ondrop="onDrop(event);"
+        >
+        <div contenteditable="true">
+          Box 1
+        </div>
+        </div>
+
+        <div
+          class="box-1"
+          ondragover="onDragOver(event);"
+          ondrop="onDrop(event);"
+        >
+        <div contenteditable="true">
+          Box 2
+        </div>
+        </div>
+
+        <div
+          class="box-1"
+          ondragover="onDragOver(event);"
+          ondrop="onDrop(event);"
+        >
+        <div contenteditable="true">
+          Box 3
+        </div>
+        </div>
+
+        <div
+          class="box-1"
+          ondragover="onDragOver(event);"
+          ondrop="onDrop(event);"
+        >
+        <div contenteditable="true">
+          Box 4
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright © 2022 STUDbud</p>
+    </footer>
+
+    <script src="tasklist.js"></script>
+  </body>
+</html>

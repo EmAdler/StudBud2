@@ -1,0 +1,74 @@
+.tasklistheader{
+    background-image: url(../images/girlstudy.jpg);
+    
+  }
+
+#task-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "taskform tasklist";
+}
+
+#taskform {
+    grid-area: taskform;
+    max-width: 300px;
+    margin: 0 auto;
+    label {
+        display: block;
+        width: 100%;
+    }
+    input{
+        width:100px;
+    }
+}
+
+#tasklist {
+    grid-area: tasklist;
+}
+
+#page1{
+padding-bottom: 5%;
+}
+#draganddrop{
+    background-color: #98D6F0;
+    padding:5%;
+
+    
+}
+.example-parent{
+    display: flex;
+    float:center;
+}
+
+.box-1{
+    border: 1px solid black; 
+    margin:2%;
+    text-align: center;
+  text-size-adjust: 12px;
+padding-top:1%;
+padding-left:2%;
+padding-right:2%;
+padding-bottom:5%;
+height:105%;
+width:70%;
+}
+
+
+.text-box-blue{
+    background-color: #98D6F0;
+    border-radius:10px ;
+    border: solid 2px white;
+    padding: 4%;
+  }
+
+
+
+  @media screen and (max-width:768px){
+    #taskform {
+      font-size: smaller;
+  }
+  #taskList{
+    font-size: smaller;
+  }
+  }

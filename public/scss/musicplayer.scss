@@ -1,0 +1,41 @@
+.musicplayerheader{
+  background-image: url(../images/musicplayer1.jpg);
+}
+
+.listofsongs{
+margin-left:20%;
+  width:60%;
+  background-color: gainsboro;
+border-radius:10px ;
+border: solid 2px white;
+text-align: center;
+margin-top: 2%;
+padding: 2%;
+  
+}
+
+.text-box-yellow{
+  background-color: #FFC533;
+  border-radius:10px ;
+  border: solid 2px white;
+  padding: 4%;
+}
+
+.title{
+  text-align: center;;
+}
+
+#yellowdiv{
+  padding:.4%;
+  background-color: #FFC533;
+}
+
+#whitediv{
+  padding:.5%;
+  background-color: white;
+}
+
+.musicbuttons{
+  text-align:center;
+
+}

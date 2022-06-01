@@ -1,0 +1,102 @@
+/*DICTIONARY PAGE*/
+
+.dictionaryheader{
+  background-image: url(../images/dictionary.jpg);
+  
+}
+
+.search-box{
+    text-align: center;
+    height: 7%;
+    padding-bottom: 2%;
+  }
+  input {
+    margin: 0 10px;
+    border: 0.3px solid #585858; 
+    border-radius: 3px;
+    width:30%;
+    padding:.5%;
+
+  }
+
+  ::placeholder {
+    font-style: italic;
+    color: rgb(206, 206, 206);
+    
+  }
+
+
+  .content{
+    background-color: #CDB3CE;
+    text-align: center;
+padding-left:28%;
+padding-top:5%;
+padding-bottom:5%;
+border-radius: 10px;
+  }
+
+.word{
+  font-size:10%;
+  width:60%;
+  background-color: gainsboro;
+border-radius:10px ;
+border: solid 2px white;
+text-align: center;
+padding: 2%;
+
+}
+
+  .details{
+    width:60%;
+    background-color: gainsboro;
+  border-radius:10px ;
+  border: solid 2px white;
+  text-align: center;
+  margin-top: 2%;
+  padding: 2%;
+  }
+
+  .word-meaning{
+    width:60%;
+    background-color: gainsboro;
+  border-radius:10px ;
+  border: solid 2px white;
+  text-align: center;
+  margin-top: 2%;
+  padding: 2%;
+  }
+  .word-example{
+    width:60%;
+    background-color: gainsboro;
+  border-radius:10px ;
+  border: solid 2px white;
+  text-align: center;
+  margin-top: 2%;
+  padding: 2%;
+  }
+
+
+
+#emptyList{
+text-align: center;
+}
+
+
+.text-box-purple{
+  background-color: #CDB3CE;
+  border-radius:10px ;
+  border: solid 2px white;
+  padding: 4%;
+}
+
+
+#purplediv{
+  padding:.4%;
+  background-color: #CDB3CE;
+}
+
+#whitediv{
+  padding:.5%;
+  background-color: white;
+}
+
