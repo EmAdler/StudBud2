@@ -1,3 +1,4 @@
+ <!-- TASK LIST -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,12 +9,15 @@
     <link rel="icon" type="image/x-icon" href="/favicon.d2232a08.ico">
   </head>
 
+ <!-- App container across all pages to create consistent formating -->
   <body class="app-container">
+    
+    <!-- NAV-->
+    <!-- SAME as in INDEX.HTML see page for comments-->
     <nav>
       <div class="logo">
       <a href="/index.html"><img src="/logo.b5bfa736.png" alt="logo" width="120px"></a>
     </div>
-    
       <ul class="nav-links">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/tasklist.html" class="active">Tasks</a></li>
@@ -21,81 +25,119 @@
         <li><a href="/musicplayer.html">Music Player</a></li>
         <li><a href="/timer.html">Timer</a></li>
       </ul>
-     
-    
     
     </nav>
 
+     <!-- HEADER-->
+      <!-- Header class to hold the image called in SCSS-->
     <header class="tasklistheader">
+       <!-- text-in-boc class is used to style the box in the header - same on all pages but with different colours-->
       <div class="text-box-blue">
         <h2>Task List</h2>
         <p>Get everything done with out forgetting anything</p>
       </div>
     </header>
 
+  <!-- SECTION - adding a task -->
+  <!-- Page 1 and page-container to be used for styling in SCSS-->
     <section id="page1" class="page-container">
+      <!-- Overaching heading to make clear instructions-->
       <h3>Add your tasks:</h3>
+      <!-- the grid to allow the page to split into 2, on the left have the form and right the infromation appear-->
       <div id="task-grid">
+        <!-- id to formate the form -->
         <form id="taskform">
-          <!-- task input -->
+
+          <!-- TASK INPUT -->
+          <!-- Lable for form-->
           <label for="task">Task:</label>
+          <!-- Content input, includes a type to show what type of forms needs to be display, the name is for backend use as a reference, ID is for styling and required means they must do it -->
           <input type="text" name="task" id="taskInput" required="">
+         
+           <!-- Break creates an line break-->
           <br>
-          <!-- Date input -->
+
+          <!-- DATE INPUT -->
+          <!-- same comments as TASK INPUT-->
           <label for="dueDate">Due Date: </label>
+          <!-- The date type create a calander pop up to increase ease of use-->
           <input type="date" name="dueDate" id="dueDateInput">
           <br>
-          <!-- Time input -->
+          
+          <!-- TIME INPUT -->
+          <!-- same comments as TASK INPUT-->
           <label for="completionTime">Completion Time: </label>
           <input type="time" name="completionTime" id="completionTimeInput">
           <br>
-          <!-- Estimated time input -->
+
+          <!-- ESTIMATED TIME INPUT -->
+          <!-- same comments as TASK INPUT-->
           <label for="estimatedTime">Estimated completion time (in mins):</label>
+          <!-- The number type crease fill in spots that can only accept numbers - reducing user error-->
           <input type="number" name="estimatedTime" id="estimatedTimeInput">
           <br>
-          <!-- Priority input -->
+
+
+          <!-- PRIORITY INPUT -->
+          <!-- Label for the form input-->
           <label for="priority">Task Priority:</label>
+          <!-- this creates a drop down menu for the user to select which option they would like -->
           <select name="prority" id="priorityInput">
             <option value="">Select one</option>
             <option value="Low">Low</option>
             <option value="Medium">Medium</option>
             <option value="High">High</option>
           </select>
-
           <br>
 
+          <!-- SUBMIT button -->
           <button type="submit">Submit</button>
         </form>
+
+        <!-- TEXT on left of screen-->
+        <!-- The id is used for formating -->
         <div id="tasklist">
+          <!-- this id 'emptylist' is used to call JS to leave the text there untill there has been a task added then delete it -->
           <p id="emptyList">You have not added any tasks yet.</p>
           <ul></ul>
         </div>
-      </div>
-    </section>
+    </div></section>
 
+  <!-- SECTION - drag and drop --> 
+    <!-- This section allows the used to drag the task into differen columns -->
+    <!-- section id is used in JS to call the function as well as styling in SCSS -->
     <section id="draganddrop">
+        <!-- Text context for the user -->
       <h3>Grouping your tasks</h3>
       <h6>Hint* Click the title to change the name...</h6>
       
+      <!-- COLUMNS - each column is the same code -->
+        <!-- Class to style the columns in CSS -->
       <div class="example-parent">
-        <div id="box-1" class="box-1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+          <!-- Each column is a div and has a class that is the same for all columns to ensure they all have the same JS functions and styling -->
+          <!-- the ondragover and ondrop calls the JS to let the tasklist information be moved on the screen and dropped in the column  -->
+          <div id="box-1" class="box-1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+        <!-- The div 'contenteditable' allows the title to be edited by the user as many times as needed by clicking on the existing text-->
         <div contenteditable="true">
           Box 1
         </div>
         </div>
 
+        <!-- COLUMNS - same comments as column 1 -->
         <div class="box-1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
         <div contenteditable="true">
           Box 2
         </div>
         </div>
-
+        
+        <!-- COLUMNS - same comments as column 1 -->
         <div class="box-1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
         <div contenteditable="true">
           Box 3
         </div>
         </div>
 
+        <!-- COLUMNS - same comments as column 1 -->
         <div class="box-1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
         <div contenteditable="true">
           Box 4
@@ -104,6 +146,8 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
+    <!-- consistent footer acorss all the pages that has text for copyright. -->
     <footer>
       <p>Copyright © 2022 STUDbud</p>
     </footer>

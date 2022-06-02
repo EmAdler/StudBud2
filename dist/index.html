@@ -1,3 +1,4 @@
+ <!-- HOME PAGE -->
 <!DOCTYPE html>
 <html>
 
@@ -8,39 +9,49 @@
     <link href="/index.c74267d1.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="/favicon.d2232a08.ico">
 </head>
-
+<!-- App container across all pages to create consistent formating -->
 <body class="app-container">
  
+  <!-- NAVIGATION -->
+  <!-- The nav is consisted acorss all pages on the application -->
     <nav>
+        <!-- The class for logo is used for formating -->
       <div class="logo">
-      <a href="/index.html"><img src="/logo.b5bfa736.png" alt="logo" width="120px"></a>
-    </div>
-    
-      <ul class="nav-links">
-        <li><a href="/index.html" class="active">Home</a></li>
-        <li><a href="/tasklist.html">Tasks</a></li>
-        <li><a href="/dictionary.html">Dictionary</a></li>
-        <li><a href="/musicplayer.html">Music Player</a></li>
-        <li><a href="/timer.html">Timer</a></li>
-      </ul>
-     
-    
-    
+        <!-- when the logo image is clicked it links back to the home page and has a consist width of 120px -->
+        <a href="/index.html"><img src="/logo.b5bfa736.png" alt="logo" width="120px"></a>
+      </div>
+        <!-- the class nav-links is used to style the nav for both computer and phone size  -->
+        <ul class="nav-links">
+            <!-- Each word is linked to the corresponding page -->
+            <!-- The 'active' class is used to make the nav bold if that is page the user is on -->
+          <li><a href="/index.html" class="active">Home</a></li>
+          <li><a href="/tasklist.html">Tasks</a></li>
+          <li><a href="/dictionary.html">Dictionary</a></li>
+          <li><a href="/musicplayer.html">Music Player</a></li>
+          <li><a href="/timer.html">Timer</a></li>
+        </ul>
+      
     </nav>
 
+  <!-- HEADER -->
+    <!-- All headers have the class home page header to show the header image as it is called in SCSS -->
     <header class="homepageheader">
+        <!-- The text-box class is consistent across all the pages as it holds the formating for heading text on each page -->
     <div class="text-box">
-      <div class="background-image-header">
-      </div>
+        <!-- Text for the header - provides basic info about what the page has -->
         <h2>STUDbud</h2>
-            <p>Studbud is the smart web application that assist all uni students to pass their degree! It I an interactive program that has a range of tools to reduce procrastination and maximise study efficiency </p>
-            
-             
+            <p>Studbud is the smart web application that assist all uni students to pass their degree! It I an interactive program that has a range of tools to reduce procrastination and maximise study efficiency </p> 
       </div>
     </header>
 
+  <!-- SECTION -->
+    <!-- This section outlines what the application does and how to use the application  -->
+
     <section> 
+        <!-- Simple header - provide context -->
       <h3>How to get the most out of this application</h3>
+        <!-- List of how to use the application - easy to read for the user as short sentence and in a list format -->
+        <!-- The id tag is used to formate the list -->
       <div id="textinfo">
                 <ul>
                     <li>1. Add all your tasks to the task list</li>
@@ -51,11 +62,21 @@
   </div>
         </section>
 
+  <!-- COLOUR SEPERATER -->
+    <!-- Div that holds formating in SCSS to break the content up in the page -->
 <div id="greydiv"></div>
 
+  <!-- SECTION -->
+    <!-- This section holds the different pages on the application to show the user visually the different page optiosn they have -->
+          <!-- Id is used for formating-->
         <section id="pages">
+            <!-- heading providing context -->
             <h3>Functions On The Application </h3>
+              <!-- group the divs to formate -->
           <div class="box"> 
+              <!-- Div class 'single' to group the different data sets  -->
+                <!-- each single includes an image, a title, text and a button that links to the page-->
+                  <!-- this provides the users another way to access the different pages after reading a small brief about each page -->
             <div class="single">
               <img src="/to-do-list.71bc601f.png" alt="todolistimg" width="7%" height="7%">
               <h5>TASK LIST</h5>
@@ -86,14 +107,15 @@
 
             </div>
           </section>
-
+  <!-- FOOTER -->
+  <!-- consistent footer acorss all the pages that has text for copyright. -->
     <footer>
         <p>Copyright © 2022 STUDbud</p>
     </footer>
 
     
      
-        <script src="/index.488ef020.js">
+        <script src="/index.f3bd186e.js">
 </script>
  
 
