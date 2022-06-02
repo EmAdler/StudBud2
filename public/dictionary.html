@@ -1,4 +1,4 @@
-  <!-- consistent footer acorss all the pages that has text for copyright. -->
+  <!-- DICTIONARY -->
 
 <!DOCTYPE html>
 <html>
@@ -11,13 +11,16 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 
+<!-- App container across all pages to create consistent formating -->
 <body class="app-container">
 
+    <!-- NAV-->
+    <!-- SAME as in INDEX.HTML see page for comments-->
     <nav>
         <div class = "logo">
         <a href="index.html"><img src="images/logo.png" alt="logo" width = "120px"></a>
       </div>
-      
+
         <ul class = "nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="tasklist.html" >Tasks</a></li>
@@ -25,39 +28,60 @@
           <li><a href="musicplayer.html">Music Player</a></li>
           <li><a href="timer.html">Timer</a></li>
         </ul>
-       
       </div>
-      
       </nav>
+
+  <!-- HEADER-->
+    <!-- Header class to hold the image called in SCSS-->
     <header class = "dictionaryheader">
         <div class = "text-box-purple">
             <h2>Dictionary</h2>
                 <p>Look up any work and instantly find the definition and synonym</p>
-                  <!-- FIGURE OUT HOW TO add a search bar -->
           </div>
         </header>
+       
+      <!-- COLOUR SEPERATER -->
+        <!-- Div that holds formating in SCSS create a coloured strip at the buttom of the header -->
         <div id = "purplediv"></div>
-<section>
+
+  <!-- SECTION - search area-->
+  <section>
+    <!-- searchbos creates a form box that the usercan type into-->
     <searchBox id = "dictionarysearch">
-        <!-- HOW TO GET A DICTIONARY DATA -->
+
+        <!-- SEARCH section -->
+        <!-- Heading text to provide context and direction for user-->
         <h3>Search a word here...</h3>
+        <!-- Div class to call JS and styling in SCSS-->
         <div class="container">
+          <!-- Div class used for styling in SCSS-->
             <div class="search-box">
+              <!-- 'Input' is the search box with the type text to create an editable type section with placeholder text to provide direction and an ID to call the API in JS-->
                 <input
                     type="text"
                     placeholder="Type the word here.."
                     id="inp-word"
                 />
+                <!-- Button to search the word - called function in JS-->
                 <button id="searchbutton">Search</button>
             </div>
+            <!-- Section below the search box-->
+            <!-- The class and id call a JS function -->
             <div class="result" id="result">
+              <!-- The 'emptylist' id calls function in JS that clears the text when a word has been submitted -->
                 <p id="emptyList">Your info will appear here...</p>
             </div>
         </div>
     </searchbox>
     </section>
+
+<!-- COLOUR SEPERATER -->
+    <!-- Div that holds formating in SCSS to break the content up in the page -->
     <div id = "whitediv"></div>
     <div id = "purplediv"></div>
+
+<!-- FOOTER -->
+  <!-- consistent footer acorss all the pages that has text for copyright. -->
     <footer>
         <p>Copyright © 2022 STUDbud</p>
       </footer>

@@ -9,8 +9,11 @@
     <link rel="icon" type="image/x-icon" href="/favicon.d2232a08.ico">
 </head>
 
+<!-- App container across all pages to create consistent formating -->
 <body class="app-container">
-
+ 
+  <!-- NAV-->
+    <!-- SAME as in INDEX.HTML see page for comments-->
   <nav>
     <div class="logo">
     <a href="/index.html"><img src="/logo.b5bfa736.png" alt="logo" width="120px"></a>
@@ -23,20 +26,23 @@
       <li><a href="/musicplayer.html">Music Player</a></li>
       <li><a href="/timer.html" class="active">Timer</a></li>
     </ul>
-   
-  
   
   </nav>
 
+  <!-- HEADER-->
+    <!-- Header class to hold the image called in SCSS-->
     <header class="timerheader">
         <div class="text-box-green">
             <h2>Timer</h2>
                 <p>Set your timer to your allocated work time to ensure productivity</p>
-                  <!-- FIGURE OUT HOW TO ADD A STOP WATCH -->
+                  
+                <!-- DISPLAY of  timer in header - to make it clear and large for the user-->
+                <!-- the div id's are used to call different function in JS and styling in SCSS-->
                   <div id="pomodoro-app">
                     <div id="container">
                       <div id="timer">
                         <div id="time">
+                          <!-- The span with id hold the digits-->
                           <span id="minutes">00</span>
                           <span id="colon">:</span>
                           <span id="seconds">00</span>
@@ -48,16 +54,21 @@
                   </div>
         </div></header>
         
+  <!-- COLOUR SEPERATER -->
+    <!-- Div that holds formating in SCSS create a coloured strip at the buttom of the header -->
     <div id="greendiv"></div>
 
-   
-
+  <!-- SECTION - rnage of buttons to set the timer-->
     <section>
+        
+      <!-- context heading -->
         <h3>Ready to Go Timers</h3>
        
-         <!-- FIGURE OUT HOW TO LINK BUTTONS TO MAKE THE TIMER WORK -->
+         <!-- Div with id to be used for styling in CSS and run in JS -->
          <div id="buttons">
+          <!-- heading providing context and direction for user-->
           <h5>Click the pomodoro timer that you would like?</h5>
+            <!-- Buttons that all have a class for SCSS styling and Id for JS functions -->
           <button class="buttonGG" id="work">30 min Work</button>
            <button class="buttonGG" id="extendedWork">1 hour Work</button>
           <button class="buttonGG" id="shortBreak">5 min Break</button>
@@ -66,10 +77,12 @@
         </div>
     </section>
 
-   
+   <!-- COLOUR SEPERATER -->
+    <!-- Div that holds formating in SCSS create a coloured strip at the buttom of the header -->
       <div id="greendiv"></div>
 
-
+<!-- FOOTER -->
+  <!-- consistent footer acorss all the pages that has text for copyright. -->
   <footer>
     <p>Copyright © 2022 STUDbud</p>
   </footer>

@@ -1,3 +1,4 @@
+<!-- MUSIC PLAYER -->
 <!DOCTYPE html>
 <html>
 
@@ -6,15 +7,15 @@
     <meta name="viewport" content="width=device-width">
     <title>StudBud</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-  
-  <link href="./scss/main.scss" rel="stylesheet" type="text/css"
-    />
+    <link href="./scss/main.scss" rel="stylesheet" type="text/css"/>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-
 </head>
 
+<!-- App container across all pages to create consistent formating -->
 <body class="app-container">
-
+    
+  <!-- NAV-->
+    <!-- SAME as in INDEX.HTML see page for comments-->
     <nav>
         <div class = "logo">
         <a href="index.html"><img src="images/logo.png" alt="logo" width = "120px"></a>
@@ -27,31 +28,33 @@
           <li><a href="musicplayer.html" class="active">Music Player</a></li>
           <li><a href="timer.html">Timer</a></li>
         </ul>
-       
       </div>
-      
       </nav>
    
+  <!-- HEADER-->
+    <!-- Header class to hold the image called in SCSS-->
     <header class = "musicplayerheader">
         <div class = "text-box-yellow">
             <h2>Music Player</h2>
                 <p>Play different songs while studying to increase productivity</p>
-    
           </div>
         </header>
-    
-    </section>
+
+    <!-- COLOUR SEPERATER -->
+      <!-- Div that holds formating in SCSS to break the content up in the page -->
         <div id = "yellowdiv"></div>
-    </section>
     
+  <!-- SECTION - music player title switch/call embedded audio-->
+    <!-- Id call JS function and SCSS styling -->
     <section id='musicplayerinteractive'>
-        <!-- FIGURE OUT HOW TO GET A MUSIC PLAYER INTO THE PAGE -->
-      
+      <!-- overarching title to provide context -->
         <h3>Song playing:</h3>
+        <!-- class and Id call the JS function  -->
           <div class="music-container" id='music-container'>
               <div class="music-info">
+                <!-- the id title will use JS to display the songs title that is currently playing through an array -->
                   <h4 id="title"></h4>
-                
+          <!-- This audio infomation is calling all the audio files and providing them a id to use in JS -->
             <audio src="./audio/forest-lullaby.mp3" id="song1" type = "audio/mpeg"></audio> 
             <audio src="./audio/chill-abstract.mp3" id="song2" type = "audio/mpeg"></audio> 
             <audio src="./audio/the-cradle.mp3" id="song3" type = "audio/mpeg"></audio> 
@@ -62,7 +65,8 @@
           </div>
     </section>
 
-
+<!-- BUTTONS - play,pause, fast forward and backwards buttons -->
+<!-- Buttons have there own class to be called in JS, the Id and class are use for JS function and styling and the clas 'fas..' create icons from an external link called in the head -->
     <div class="musicbuttons">
         <button id="prev" class="action-btn">
             <i class="fas fa-backward"></i>
@@ -74,9 +78,12 @@
             <i class="fas fa-forward"></i>
         </button>
     </div>
+
+<!-- SECTION - information about each song -->
    <section>
-  
+     <!-- class to use for styling in SCSS -->
        <div class = "listofsongs"> 
+        <!-- Title and list provides context for the user about what song they are up to and which is next -->
         <h5><strong>List of Embedded Songs:</strong></h5>
         <ul><h5>1. Forest Lullaby</h5></ul>
         <ul><h5>2. Chill Abstract</h5></ul>
@@ -87,6 +94,9 @@
         <ul><h5>7. Sedative</h5></ul>
     </div>
    </section> 
+
+<!-- COLOUR SEPERATER -->
+    <!-- Div that holds formating in SCSS to break the content up in the page -->
    <div id = "whitediv"></div>
    <div id = "yellowdiv"></div>
     <footer>
