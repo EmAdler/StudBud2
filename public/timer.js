@@ -1,3 +1,8 @@
+//TIMER JS
+
+///REFERENCE////
+
+//setting varibles for the pomodoro timer 
 var pomodoro = {
   started: false,
   minutes: 0,
@@ -8,6 +13,7 @@ var pomodoro = {
   minutesDom: null,
   secondsDom: null,
   fillerDom: null,
+  //function to select the digits  
   init: function () {
     var self = this;
     this.minutesDom = document.querySelector("#minutes");
@@ -16,6 +22,8 @@ var pomodoro = {
     this.interval = setInterval(function () {
       self.intervalCallback.apply(self);
     }, 1000);
+
+    //Queryselector to create functions for each button from the id in HTML
     document.querySelector("#work").onclick = function () {
       self.startWork.apply(self);
     };
@@ -35,6 +43,7 @@ var pomodoro = {
     
     
   },
+  //Reset the values 
   resetVariables: function (mins, secs, started) {
     this.minutes = mins;
     this.seconds = secs;
@@ -42,6 +51,9 @@ var pomodoro = {
     this.fillerIncrement = 200 / (this.minutes * 60);
     this.fillerHeight = 0;
   },
+
+
+  //Buttons to display how long each button will set the timer for
   startWork: function () {
     this.resetVariables(30, 0, true);
   },
@@ -58,18 +70,21 @@ var pomodoro = {
     this.resetVariables(0, 0, false);
     this.updateDom();
   },
+  //Function to check if double digits 
   toDoubleDigit: function (num) {
     if (num < 10) {
       return "0" + parseInt(num, 10);
     }
     return num;
   },
+  //update function to display double digits
   updateDom: function () {
     this.minutesDom.innerHTML = this.toDoubleDigit(this.minutes);
     this.secondsDom.innerHTML = this.toDoubleDigit(this.seconds);
     this.fillerHeight = this.fillerHeight + this.fillerIncrement;
     this.fillerDom.style.height = this.fillerHeight + "px";
   },
+  //Default call back functions, to make the digitis frun off each other e.g. ones it has been 60sec make it 1min
   intervalCallback: function () {
     if (!this.started) return false;
     if (this.seconds == 0) {
@@ -89,6 +104,7 @@ var pomodoro = {
     this.fillerHeight = 0;
   },
 };
+//function to onload the info
 window.onload = function () {
   pomodoro.init();
 };
