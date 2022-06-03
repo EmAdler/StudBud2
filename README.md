@@ -41,7 +41,7 @@ The task list page of the application has a very simple style with a range of fu
 
  I also used (Mozilla, 2022) to discover how to edit a title on the column which significantly improved the functionality of the page as the user can customise their use of the columns e.g. priorities, subject, dates, etc. (see below).
 
- ![column names](/public/readmeimages/columnnames.png)
+ ![column names](/public/readmeimages/columnnameslong.png)
 
   The overall design of the task list page did change, as in the pitch, I didn’t consider the different information that the user would need to include for a task as I initially only designed to have a space for the name of the task. I altered this section by splitting the page into two and having the left side be the form to input the content and the right side to display the information. The structure of the bottom section of the page stayed pretty consistent as it was a simple and user-friendly layout (see below). 
 
@@ -69,9 +69,12 @@ The timer page was also a very simple page that was focused on functionality rat
 
 The design of the application will assist university students that experience low range learning disabilities and help them to stay on track and help with completing all their university needs.
 
+
 **Commits**
 
 My orignal repository stopped working hence I had to create another this week, thus there is only commits from the past few days. 
+
+
 
 **References**
 
