@@ -1,30 +1,48 @@
+/*BUTTONS*/
 
+/*Most buttons acorss the page are all the same formating just change the colours*/
+/*Used on task list page*/
+/*Generic buttons*/
 button{
+  /*background colour*/
   background-color: gainsboro;
+  /*text is white*/
   color: white;
+  /*white rounded solid border */
   border: 1px solid white; 
+  border-radius: 6px;
+  /*button sits below content */
   display: inline-block;
+  /*width of 150px*/
   width: 150px;
+  /*padding on the top and button of the button*/
   padding-top: .5%;
   padding-bottom:.5%;
-  border-radius: 6px;
+  /*font size is 14px*/
   font-size: 14px;
+  /*position is based on other content in section*/
   position:relative;
+  /*when hovering over a pointer will appear*/
   cursor: pointer;
-    transition: ease-out 0.2s;
+  /*animation for when hovering over a different colour appears */
+  transition: ease-out 0.2s;
 }
 
-
+/*Generic button hover*/
 button:hover{
+  /*user hover over the button will change colours*/
   box-shadow: inset 200px 0 0 0 #98D6F0;
   }
 
-
+/*Button Grey to Green*/
+/*Mainly used on timer page of the website*/
+/*Same as 'Generic button' see comments */
 .buttonGG{
   background-color: gainsboro;
   color: white;
   border: 1px solid white; 
   display: inline-block;
+  /*smaller with of 125px to make it easy to read*/
   width: 125px;
   padding-top: .5%;
   padding-bottom:.5%;
@@ -34,12 +52,15 @@ button:hover{
   cursor: pointer;
     transition: ease-out 0.2s;
 }
-
-
+/*Same as 'Generic button hover' see comments */
 .buttonGG:hover{
+  /*changes to green instead of blue*/
   box-shadow: inset 200px 0 0 0 #63B891;
   }
 
+/*Search button*/
+/*Only used on dictionary of the website*/
+/*Same as 'Generic button' see comments */
   #searchbutton{
     background-color: gainsboro;
     color: white;
@@ -55,15 +76,16 @@ button:hover{
       transition: ease-out 0.2s;
   }
 
-
+/*Same as 'Generic button hover' see comments */
   #searchbutton:hover{
+      /*changes to purple instead of blue*/
     box-shadow: inset 200px 0 0 0 #CDB3CE;
     }
 
    
-
-
-
+/*Button Green to Grey*/
+/*Used on home page of the website*/
+/*Same as 'Generic button' see comments */
 .button-1{
     background-color: #63B891;
     color: white;
@@ -80,10 +102,15 @@ button:hover{
     transition: ease-out 0.2s;
     
   }
+  /*Same as 'Generic button hover' see comments */
   .button-1:hover{
+    /*changes to grey instead of blue*/
   box-shadow: inset 200px 0 0 0 gainsboro;
   }
   
+/*Button yellow to Grey*/
+/*Used on home page of the website*/
+/*Same as 'Generic button' see comments */
   .button-2{
     background-color: #FFC533;
     color: white;
@@ -100,13 +127,15 @@ button:hover{
     transition: ease-out 0.2s;
     
   }
+    /*Same as 'Generic button hover' see comments */
   .button-2:hover{
+      /*changes to grey instead of blue*/
   box-shadow: inset 200px 0 0 0 gainsboro;
-
-
   }
   
-
+/*Button purple to Grey*/
+/*Used on home page of the website*/
+/*Same as 'Generic button' see comments */
   .button-3{
     background-color: #CDB3CE;
     color: white;
@@ -123,12 +152,15 @@ button:hover{
     transition: ease-out 0.2s;
     
   }
+  /*Same as 'Generic button hover' see comments */
   .button-3:hover{
   box-shadow: inset 200px 0 0 0 gainsboro;
-
-
+      /*changes to grey instead of blue*/
   }
   
+  /*Button blue to Grey*/
+/*Used on home page of the website*/
+/*Same as 'Generic button' see comments */
   .button-4{
     background-color: #98D6F0;
     color: white;
@@ -145,17 +177,22 @@ button:hover{
     transition: ease-out 0.2s;
     
   }
+  /*Same as 'Generic button hover' see comments */
   .button-4:hover{
+    /*changes to grey instead of blue*/
   box-shadow: inset 200px 0 0 0 gainsboro;
   }
 
-
+  /*Button blue to Grey*/
+  /*Used on music player  of the website*/
+  /*Similar to the 'generic button' but smaller in width all other comments are the same as 'generic button'*/
   .action-btn{
     background-color: #FFC533;
     color: white;
     border: 1px solid; 
     display: inline-block;
-    width: 50px;
+    //width of 50px to sit around the icons more cleanly
+    width: 50px; 
     padding-top: .5%;
     padding-bottom:.5%;
     border-radius: 6px;
@@ -164,8 +201,9 @@ button:hover{
     cursor: pointer;
       transition: ease-out 0.2s;
   }
-
+ /*Same as 'Generic button hover' see comments */
   .action-btn:hover{
+    /*changes to grey instead of blue*/
     box-shadow: inset 200px 0 0 0 gainsboro;
     }
   

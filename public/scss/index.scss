@@ -1,44 +1,68 @@
-
+/*HOME PAGE*/
+/*Image header */
 .homepageheader{
   background-image: url(../images/student-laptop-books.jpg);
 }
-
- 
+/*text box for heading consistent across all pages with a different colour */
+/*background colour - colour association*/
+/*rounded border - keep consistent*/
+/*padding - easy to read*/
+.text-box{
+  background-color: gainsboro;
+    border-radius:10px ;
+    border: solid 2px white;
+    padding: 4%;
+    
+  }
+ /*Text layout for the list of information */
  #textinfo{
+   /*width of 60% so the lines do not run to far across the page */
      width:60%;
+     /*padding on top and bottom to make it look neat*/
      padding-top:2%;
      padding-bottom:5%;
+     /*center content*/
      margin-left:20%;
  }
-
+/*heading for the second section of the page*/
    #pages h3{
      text-align: center;
      padding-bottom: 5%;
    }
-   
+   /*Styling of the div of the different single divs (single) */
    .box{
+     /*width across most of the page */
      width: 80%;
+     /*the formate is flexible - responsive to the screen size*/
      display: flex;
      flex-wrap: wrap;
+     /*even spacing*/
      justify-content: space-around;
+     /*centered*/
      margin:auto;
    }
+
+   /*Styling for the single divs that include a pick, heading, text and abutton*/
    .single{
+     /*each div is about 22% of the screen*/
      flex-basis: 22%;
+     /*text is centered */
      text-align:center;
-     border-radius:6px;
+     /*gap below each div to ensure they do not sit on each */
      margin-bottom: 20px;
+     /*text is black*/
      color: black;
+     /*position is relative for each section so they all sit under each other nicely */
      position: relative;
 
    }
-   
+   /*size of images is consistant*/
    .single img{
      width:30%;
-     border-radius:6px;
    }
  
-
+/*Grey div to break up the text*/
+/*consistent colour to page with small padding */
 #greydiv{
     padding:.4%;
     background-color: gainsboro;

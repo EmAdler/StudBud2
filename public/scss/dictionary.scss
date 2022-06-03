@@ -1,51 +1,71 @@
 /*DICTIONARY PAGE*/
 
+/*Image header */
 .dictionaryheader{
   background-image: url(../images/dictionary.jpg);
-  
 }
 
-.search-box{
-    text-align: center;
-    height: 7%;
-    padding-bottom: 2%;
-  }
+/*text box for heading consistent across all pages with a different colour */
+/*background colour - colour association*/
+/*rounded border - keep consistent*/
+/*padding - easy to read*/
+.text-box-purple{
+  background-color: #CDB3CE;
+  border-radius:10px ;
+  border: solid 2px white;
+  padding: 4%;
+}
+
+/*Input search box formating */
   input {
+    /*margin to create a gap */
     margin: 0 10px;
+    /*thin solid border that is rounded*/
     border: 0.3px solid #585858; 
     border-radius: 3px;
+    /*width of 30% - responsive to screen width*/
     width:30%;
+    /*padding creating a gap*/
     padding:.5%;
 
   }
-
+  /*Input placeholder to provide clear instruction that are not to intense */
   ::placeholder {
     font-style: italic;
     color: rgb(206, 206, 206);
     
   }
 
-
+/*the div that holds all the content*/
   .content{
+    /*backround colour - colour assosication */
     background-color: #CDB3CE;
+    /*text align center*/
     text-align: center;
-padding-left:28%;
-padding-top:5%;
-padding-bottom:5%;
-border-radius: 10px;
+    /*make the div centered with padding around the content  */
+    padding-left:28%;
+    padding-top:5%;
+    padding-bottom:5%;
+    /*rounded edge to keep consisted with styling*/
+    border-radius: 10px;
   }
 
+  /*Div for the 'word' element of the content*/
 .word{
-  font-size:10%;
+  /*div only 60% wide centered to the page - easy to ready as no long sentenses*/
   width:60%;
+  /*consistent background colour easy to read*/
   background-color: gainsboro;
-border-radius:10px ;
-border: solid 2px white;
-text-align: center;
-padding: 2%;
+  /*border to keep styling consistent*/
+  border: solid 2px white;
+  /*center align text*/
+  text-align: center;
+  /*padding around the text to ensure its easy to read*/
+  padding: 2%;
 
 }
-
+  /*Div for the 'details' element of the content*/
+  /*same comments as .word*/
   .details{
     width:60%;
     background-color: gainsboro;
@@ -56,6 +76,8 @@ padding: 2%;
   padding: 2%;
   }
 
+/*Div for the 'word-meaning' element of the content*/
+  /*same comments as .word*/
   .word-meaning{
     width:60%;
     background-color: gainsboro;
@@ -65,6 +87,9 @@ padding: 2%;
   margin-top: 2%;
   padding: 2%;
   }
+
+  /*Div for the 'word-example' element of the content*/
+  /*same comments as .word*/
   .word-example{
     width:60%;
     background-color: gainsboro;
@@ -76,25 +101,20 @@ padding: 2%;
   }
 
 
-
+/*When no words have been searched the text 'Your info will appear here...' will appear and be centered in the middle*/
 #emptyList{
 text-align: center;
 }
 
 
-.text-box-purple{
-  background-color: #CDB3CE;
-  border-radius:10px ;
-  border: solid 2px white;
-  padding: 4%;
-}
-
-
+/*Purple div to break up the text*/
+/*consistent colour to page with small padding */
 #purplediv{
   padding:.4%;
   background-color: #CDB3CE;
 }
 
+/*White div to create a gap*/
 #whitediv{
   padding:.5%;
   background-color: white;

@@ -1,19 +1,14 @@
+/*MUSIC PLAYER*/
+
+/*Image header*/
 .musicplayerheader{
   background-image: url(../images/musicplayer1.jpg);
 }
 
-.listofsongs{
-margin-left:20%;
-  width:60%;
-  background-color: gainsboro;
-border-radius:10px ;
-border: solid 2px white;
-text-align: center;
-margin-top: 2%;
-padding: 2%;
-  
-}
-
+/*text box for heading consistent across all pages with a different colour */
+/*background colour - colour association*/
+/*rounded border - keep consistent*/
+/*padding - easy to read*/
 .text-box-yellow{
   background-color: #FFC533;
   border-radius:10px ;
@@ -21,21 +16,44 @@ padding: 2%;
   padding: 4%;
 }
 
+/*title of the music centered in the page*/
 .title{
   text-align: center;;
 }
+/*buttons to be centered under the title*/
+.musicbuttons{
+  text-align:center;
+}
 
+/*list of songs - showing what the user could play*/
+.listofsongs{
+  /*centered*/
+  margin-left:20%;
+  /*60% width easy to read - repsonsive*/
+  width:60%;
+  /* background colour - consistent colour pallet across page*/
+  background-color: gainsboro;
+  /*rounded border*/
+  border-radius:10px ;
+  /*centered text*/
+  text-align: center;
+  /*gap on top - easy to read*/
+  margin-top: 2%;
+  /*space between text and div*/
+  padding: 2%;
+  
+}
+
+
+/*Purple div to break up the text*/
+/*consistent colour to page with small padding */
 #yellowdiv{
   padding:.4%;
   background-color: #FFC533;
 }
 
+/*White div to create a gap*/
 #whitediv{
   padding:.5%;
   background-color: white;
-}
-
-.musicbuttons{
-  text-align:center;
-
 }

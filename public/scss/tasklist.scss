@@ -1,70 +1,89 @@
+/*TASK LIST */
+/*Image header */
 .tasklistheader{
     background-image: url(../images/girlstudy.jpg);
-    
   }
 
+/*text box for heading consistent across all pages with a different colour */
+/*background colour - colour association*/
+/*rounded border - keep consistent*/
+/*padding - easy to read*/
+.text-box-blue{
+  background-color: #98D6F0;
+  border-radius:10px ;
+  border: solid 2px white;
+  padding: 4%;
+}
+
+
+/*Grid layout for section 1 of the page - allowing the task form to sit on the left and content appear on the right*/
 #task-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "taskform tasklist";
 }
-
+/*Task form styling*/
 #taskform {
     grid-area: taskform;
+    /*width of form */
     max-width: 300px;
+    /*no margins */
     margin: 0 auto;
+    /*labels*/
     label {
         display: block;
         width: 100%;
     }
+    /*width of inputs */
     input{
         width:100px;
     }
 }
-
 #tasklist {
     grid-area: tasklist;
 }
-
+/* create gap between the sections */
 #page1{
 padding-bottom: 5%;
 }
+/*drag and drop section */
 #draganddrop{
+  /*background colour blue - colour association */
     background-color: #98D6F0;
+    /*gap padding around the sides of the text*/
     padding:5%;
-
-    
 }
+
+/*The drag and drop div is flex displayed making it responsive and floats to the center of the page */
 .example-parent{
     display: flex;
     float:center;
 }
-
+/*Formating for all the columns */
 .box-1{
+  /*black rounded border*/
     border: 1px solid black; 
+    /*2 % margin to ensure no columns run into each other*/
     margin:2%;
+    /*all info is centered*/
     text-align: center;
-  text-size-adjust: 12px;
-padding-top:1%;
-padding-left:2%;
-padding-right:2%;
-padding-bottom:5%;
-height:105%;
-width:70%;
+    /*text-size gets smaller when dropped into the column*/
+    text-size-adjust: 12px;
+    /*padding on sections of the column*/
+    padding-top:1%;
+    padding-left:2%;
+    padding-right:2%;
+    padding-bottom:5%;
+    /*starting height and width depending on content*/
+    height:105%;
+    width:70%;
 }
 
 
-.text-box-blue{
-    background-color: #98D6F0;
-    border-radius:10px ;
-    border: solid 2px white;
-    padding: 4%;
-  }
-
-
-
+/*RESPONSIVE phone size*/
   @media screen and (max-width:768px){
+    /*font size for the form and list gets smaller easier to read on small phone*/
     #taskform {
       font-size: smaller;
   }

@@ -1,26 +1,37 @@
+/*NAV*/
+
+/*Nav across all page*/
 nav{
+  /*display is flex - repsonisve to screen size*/
   display: flex;
+  /*gap around the text */
   justify-content: space-around;
+  /*centered items */
   align-items: center;
+  /*padding ontop - not to high */
   padding-top: 2%;
   
 }
 
+/*the nav links (the words) have taken the list styling off and in the colour black text*/
 .nav-links a{
   text-decoration: none;
   color: black;
 }
+/*the page that is currently being used is bolded - show which page they are on - user friendly */
 nav .active{
 font-weight: bold;
 }
 
+/*flexible display with even sapcing and 50% widths between */
 .nav-links{
   display:flex;
   justify-content: space-around;
   width: 50%;
 }
 
-
+/*RESPONSIVE phone size*/
+/*font of links gets smaller with wider gapping to map it user friendly on a phone device vs a computer */
 @media screen and (max-width:768px){
   .nav-links{
     font-size: smaller;

@@ -1,48 +1,58 @@
+/*TYPOGRAPHY*/
+/*imported font for the page*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/*standed font size*/
 html {
     font-size: 100%;
 }
 
-
+/*all body styling*/
 body {
+    /*white background*/
     background: white;
+    /*call the font family*/
     font-family: 'Raleway', sans-serif;
+    /*strong font-weight*/
     font-weight: 400;
+    /*line height - easy to read*/
     line-height: 1.75;
+    /*font colour - black*/
     color: #000000;
 }
-
+/* all text in headers are centered */
 header{
     text-align: center;
 }
+/*has a margin on the bottom to create a gap*/
 p {
     margin-bottom: 1rem;
 }
-
+/*MAJOR HEADINGS - large font with no margin on top*/
 h1 {
     margin-top: 0;
     font-size: 3.052rem;
 }
-
+/* MAJOR SUB HEADINGS - medium font */
 h2 {
     font-size: 2.441rem;
 }
-
+/*MOST SUBHEADINGS - medium small font all centered with padding*/
 h3 {
     font-size: 1.953rem;
     text-align: center;
     padding-top: 1%;
 }
-
+/*SOME SUBHEADINGS -  small font all centered*/
 h4 {
     font-size: 1.563rem;
     text-align:center;
 }
-
+/*KEY INFO - smaller font*/
 h5 {
     font-size: 1.25rem;
 }
 
+/*SMALLEST KEY INFO - smallest heading font*/
 
 h6{
     text-align:center;

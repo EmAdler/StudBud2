@@ -41,13 +41,6 @@ footer {
   padding: 1% 1% 1% 4%;
 }
 
-.text-box {
-  background-color: #dcdcdc;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  padding: 4%;
-}
-
 html {
   font-size: 100%;
 }
@@ -130,6 +123,13 @@ nav .active {
   background-image: url("girlstudy.6de88b06.jpg");
 }
 
+.text-box-blue {
+  background-color: #98d6f0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 4%;
+}
+
 #task-grid {
   grid-template: "taskform tasklist" 1fr
   / 1fr 1fr;
@@ -177,13 +177,6 @@ nav .active {
   border: 1px solid #000;
   margin: 2%;
   padding: 1% 2% 5%;
-}
-
-.text-box-blue {
-  background-color: #98d6f0;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  padding: 4%;
 }
 
 @media screen and (max-width: 768px) {
@@ -352,6 +345,13 @@ button:hover {
   background-image: url("student-laptop-books.1fe58c59.jpg");
 }
 
+.text-box {
+  background-color: #dcdcdc;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 4%;
+}
+
 #textinfo {
   width: 60%;
   margin-left: 20%;
@@ -375,7 +375,6 @@ button:hover {
 .single {
   text-align: center;
   color: #000;
-  border-radius: 6px;
   flex-basis: 22%;
   margin-bottom: 20px;
   position: relative;
@@ -383,7 +382,6 @@ button:hover {
 
 .single img {
   width: 30%;
-  border-radius: 6px;
 }
 
 #greydiv {
@@ -395,10 +393,11 @@ button:hover {
   background-image: url("dictionary.bf6bba41.jpg");
 }
 
-.search-box {
-  text-align: center;
-  height: 7%;
-  padding-bottom: 2%;
+.text-box-purple {
+  background-color: #cdb3ce;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 4%;
 }
 
 input {
@@ -428,9 +427,7 @@ input {
   text-align: center;
   background-color: #dcdcdc;
   border: 2px solid #fff;
-  border-radius: 10px;
   padding: 2%;
-  font-size: 10%;
 }
 
 .details, .word-meaning, .word-example {
@@ -445,13 +442,6 @@ input {
 
 #emptyList {
   text-align: center;
-}
-
-.text-box-purple {
-  background-color: #cdb3ce;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  padding: 4%;
 }
 
 #purplediv {
@@ -500,17 +490,6 @@ input {
   background-image: url("musicplayer1.d19cc87f.jpg");
 }
 
-.listofsongs {
-  width: 60%;
-  text-align: center;
-  background-color: #dcdcdc;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  margin-top: 2%;
-  margin-left: 20%;
-  padding: 2%;
-}
-
 .text-box-yellow {
   background-color: #ffc533;
   border: 2px solid #fff;
@@ -518,8 +497,18 @@ input {
   padding: 4%;
 }
 
-.title {
+.title, .musicbuttons {
   text-align: center;
+}
+
+.listofsongs {
+  width: 60%;
+  text-align: center;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-left: 20%;
+  padding: 2%;
 }
 
 #yellowdiv {
@@ -530,10 +519,6 @@ input {
 #whitediv {
   background-color: #fff;
   padding: .5%;
-}
-
-.musicbuttons {
-  text-align: center;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */

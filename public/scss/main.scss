@@ -1,3 +1,5 @@
+/*MAIN*/
+/*imports each page into the main.SCSS to allow it to be the only page called in HTML*/
 @import 'reset';
 @import 'layout';
 @import 'typography';

@@ -1,33 +1,33 @@
-/*GENERAL*/
-
+/*GENERAL Layouts across the web application*/
+/*header across all pages*/
 header{
-    background-position: center;
+  /*position and size of heading image (which is called on each SCSS page) is centered and covers the whole page*/
+  background-position: center;
   background-size: cover;
+  /*padding to make the header sit evenly*/
   padding-top:5%;
   padding-bottom:5%;
   padding-left:25%;
   padding-right:25%;
 }
 
+/*All section semantic elements hav a padding of 15% to make it easy to read for the users*/
 section{
     padding-left:15%;
     padding-right:15%;
 }
 
-
+/*Footer across all the pages*/
 footer{
+  /*backgorund colour is white - clean */
     background-color: white;
+    /*padding for the text*/
     padding:1%;
+    /*sits slightly to the left*/
     padding-left:4%;
+    /*border to clearly show the section*/
     border-top: 1px solid gainsboro; 
     border-bottom: 1px solid gainsboro; 
     }
 
-.text-box{
-background-color: gainsboro;
-  border-radius:10px ;
-  border: solid 2px white;
-  padding: 4%;
-  
-}
 

@@ -1,10 +1,14 @@
-
+/*TIMER*/
+/*Image header */
 .timerheader{
     background-image: url(../images/timer1.jpg);
    
   }
   
-
+/*text box for heading consistent across all pages with a different colour */
+/*background colour - colour association*/
+/*rounded border - keep consistent*/
+/*padding - easy to read*/
 .text-box-green{
     background-color: #63B891;
     border-radius:10px ;
@@ -12,18 +16,21 @@
     padding: 4%;
   }
 
+/*increase the size of the timer digits to make it easier to read*/
 #time{
     font-size: 300%;
     padding-bottom: 2%;
 }
 
+/*div of the buttons are centered to the page with padding around it */
 #buttons{
     padding:2%;
     text-align: center;
 }
 
 
-
+/*Green div to break up the text*/
+/*consistent colour to page with small padding */
 #greendiv{
     padding:.4%;
     background-color: #63B891;
@@ -31,9 +38,11 @@
 
 
 
+/*RESPONSIVE phone size*/
 
 @media screen and (max-width:768px){
  #time{
+   /*timer digits gets bigger to make it take up most of the screen as it is the msot important part*/
    font-size:xx-large;
  }
 }
