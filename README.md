@@ -27,7 +27,7 @@ There is a range of design factors that I have considered and used across the we
 
 The home page is a very simple landing page for the users, which provides a basic outline of what the application is, and how it can be used. It introduces the styling for the application, by showing which colour and icons are associated with each page as well as the button and typography used. It also provides 5 tips on how to use the application in list styling to make it easy to read. The major changes between my initial design of the home page are the layout of the heading and no longer using an image to match the block of text in section 2. I altered the heading style to be consistent across all the pages on the website as when I was speaking to my friends she stated, “why is that one different - tess”. Thus, I made all the page headers have the same styling, but with a different background image and background colour for the text. I also cut out the image in the first section of the page as it didn’t add any value or information to the web application, making the page more seamless. 
 
-![Home Page](./readmeimages/homepagecompare.png)
+![Home Page](./images/beach.png)
 
 **Task List:**
 
@@ -50,6 +50,9 @@ The timer page was also a very simple page that was focused on functionality rat
 
 The design of the application will assist university students that experience low range learning disabilities and help them to stay on track and help with completing all their university needs.
 
+**Commits**
+
+My orignal repository stopped working hence I had to create another this week, thus there is only commits from the past few days. 
 
 **References**
 
