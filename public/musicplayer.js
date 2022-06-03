@@ -1,6 +1,9 @@
 //MUSIC PLAYER 
 
 ////REFERNCE/////
+//V. (n.d.). Simple-Music-player/index.html at gh-pages · vivekdogra02/Simple-Music-player. GitHub. Retrieved June 3, 2022, from https://github.com/vivekdogra02/Simple-Music-player/blob/gh-pages/index.html
+//Cloudflare. (n.d.). PixaBay. Retrieved June 3, 2022, from https://pixabay.com/music/search/mood/relaxing/
+//Traversy Media. (2021, April 10). Build a Music Player | Vanilla JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=QTHRWGn_sJw
 
 //Call the elements from HTML
 const musicContainer = document.getElementById('music-container');

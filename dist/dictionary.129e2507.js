@@ -1,5 +1,8 @@
 //DICTION JS
 //REFERENCE//
+//BAMANIA, U. (2021, September 10). Learn To Build a Simple Dictionary Application Using JavaScript. Make Us OF. Retrieved June 3, 2022, from https://www.makeuseof.com/build-dictionary-app-using-javascript/
+//C. (2021, October 10). Build A Dictionary App in HTML CSS & JavaScript. CodingNepal. Retrieved June 3, 2022, from https://www.codingnepalweb.com/build-dictionary-app-html-javascript/
+//API - Free Dictionary API. (n.d.). Dictionary API. Retrieved June 3, 2022, from https://dictionaryapi.dev/
 //Calling the API for the diction 
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 //Call the results and searchbutton elements from HTML

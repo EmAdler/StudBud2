@@ -1,5 +1,6 @@
 //TIMER JS
 ///REFERENCE////
+//Cloudflare. (n.d.-b). CodePen. Retrieved June 3, 2022, from https://codepen.io/rajdgreat007/pen/edvZpx
 //setting varibles for the pomodoro timer 
 var pomodoro = {
     started: false,

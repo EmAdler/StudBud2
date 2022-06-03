@@ -1,6 +1,8 @@
 //TASK LIST JS
 
 //REFERENCE//
+//Tyler Potts. (2021, October 2). Build a Todo list app in HTML, CSS & JavaScript in 2021 | JavaScript for Beginners tutorial [Video]. YouTube. https://www.youtube.com/watch?v=MkESyVB4oUw
+//W3schools. (n.d.). HTML Drag and Drop API. W3 Schools. Retrieved June 3, 2022, from https://www.w3schools.com/html/html5_draganddrop.asp
 
 //DOM elements for form
 const form = document.getElementById("taskform");
